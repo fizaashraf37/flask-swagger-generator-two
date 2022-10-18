@@ -65,3 +65,18 @@ def get_object(id):
 
 generator.generate_swagger(app, destination_path="swagger.yaml")
 ```
+
+
+## Features Added
+
+- Support for adding server URL
+- Support for nested schemas in request/response (nested schema for Marshmallow schema type will be added soon)
+- Support for input type `path` parameter 
+- Support for `Query Parameters`
+- Support for adding URL base
+- Support for marshmallow `Function` and `Mapping` feild types 
+- Support for grouping endpoints by prodiving custom tags
+
+## Fixes
+
+- Generator.generate_swagger was not working if destination path is not provided
